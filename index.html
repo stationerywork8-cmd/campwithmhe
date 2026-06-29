@@ -272,10 +272,10 @@
     background:var(--cream);
   }
   .about-grid{
-    max-width:1100px;
+    max-width:1300px;
     margin:0 auto;
     display:grid;
-    grid-template-columns:1fr 1.1fr;
+    grid-template-columns:1.9fr 1fr;
     gap:4rem;
     align-items:center;
   }
@@ -283,7 +283,7 @@
     position:relative;
     border-radius:4px;
     overflow:hidden;
-    aspect-ratio:4/5;
+    aspect-ratio:16/10;
   }
   .about-img img{
     width:100%;height:100%;object-fit:cover;
@@ -610,93 +610,6 @@
     grid-template-columns:repeat(auto-fill, minmax(240px, 1fr));
     gap:2.4rem 1.8rem;
   }
-  .gallery-item.featured{
-    grid-column:1 / -1;
-    max-width:1000px;
-    margin:2rem auto 0;
-    background:none;
-    padding:0;
-    box-shadow:none;
-    transform:none !important;
-    border-radius:6px;
-    overflow:visible;
-  }
-  .gallery-item.featured:hover{
-    transform:none !important;
-    box-shadow:none;
-  }
-  .gallery-item.featured .photo{
-    aspect-ratio:unset;
-    border-radius:6px;
-    overflow:hidden;
-  }
-  .gallery-item.featured .photo img{
-    width:100%;
-    height:auto;
-    object-fit:unset;
-    display:block;
-  }
-  .gallery-item.featured::before{
-    display:none;
-  }
-  .gallery-item.featured .gallery-caption{
-    background:none;
-    position:relative;
-    text-align:center;
-    padding:1.4rem 1rem 0.5rem;
-    opacity:1;
-    transform:none;
-  }
-  .gallery-item.featured .gallery-caption .cap-num{
-    color:var(--gold);
-    font-size:0.78rem;
-  }
-  .gallery-item.featured .gallery-caption h4{
-    font-size:1.4rem;
-    color:var(--cream);
-  }
-  .gallery-item.featured .gallery-caption p{
-    font-size:0.95rem;
-    color:rgba(246,240,228,0.75);
-  }
-  .gallery-item.featured:hover img{
-    transform:none;
-  }
-  .gallery-appreciation{
-    max-width:1000px;
-    margin:3rem auto 1rem;
-    background:var(--pine);
-    border-radius:6px;
-    padding:2.4rem 2.6rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:2.4rem;
-    flex-wrap:wrap;
-    position:relative;
-    overflow:hidden;
-    text-align:left;
-  }
-  .gallery-appreciation::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(135deg, rgba(217,167,65,0.08) 0%, transparent 60%);
-    pointer-events:none;
-  }
-  .gallery-appreciation .eyebrow{
-    color:var(--gold);
-    display:block;
-    margin-bottom:0.4rem;
-  }
-  .gallery-appreciation p{
-    color:rgba(246,240,228,0.8);
-    font-size:0.95rem;
-    line-height:1.7;
-    max-width:55ch;
-    font-style:normal;
-    margin:0;
-  }
   .gallery-item{
     position:relative;
     background:var(--cream);
@@ -890,9 +803,8 @@
     transition:all 0.3s ease;
   }
   .contact-btn .icon{
-    width:18px;
-    height:18px;
-    flex-shrink:0;
+    font-size:1.1rem;
+    line-height:1;
   }
   .contact-btn:hover{
     transform:translateY(-3px);
@@ -980,6 +892,7 @@
     <a href="#camps">Upcoming Camps</a>
     <a href="#offer">What We Do</a>
     <a href="#gallery">Gallery</a>
+    <a href="#seasons">Past Seasons</a>
     <a href="#contact">Join Us</a>
   </div>
 </nav>
@@ -1000,17 +913,17 @@
 <section class="about" id="about">
   <div class="about-grid">
     <div class="about-img">
-      <img src="https://i.imgur.com/QjPF7bi.jpeg" alt="Friends gathered around a campfire at night">
+      <img src="images/about.jpg" alt="Escape Game camp on the Nile">
       <div class="tag mono">EVERY CAMP, A NEW CIRCLE</div>
     </div>
     <div class="about-text">
       <span class="eyebrow">Who We Are</span>
-      <h2>Camping, but make it a community.</h2>
+      <h2>Camping, but make it about community.</h2>
       <p>Camp With MHE started as a small group chat planning weekend getaways out of Kampala — and grew into a community of people who keep showing up for the next trip.</p>
       <p>We scout the sites, sort the logistics, bring the gear list down to "just you and a backpack," and handle everything from bonfires to bush breakfasts. You show up, we set the scene.</p>
       <div class="about-stats">
         <div>
-          <span class="num">30+</span>
+          <span class="num">16</span>
           <span class="lbl mono">Camps Hosted</span>
         </div>
         <div>
@@ -1132,7 +1045,7 @@
     <img src="https://i.imgur.com/fxoz9Vd.jpeg" alt="Camp With MHE snapshot">
     <img src="https://i.imgur.com/S6S1icy.jpeg" alt="Camp With MHE snapshot">
     <img src="https://i.imgur.com/olx0wWB.jpeg" alt="Camp With MHE snapshot">
-    <img src="https://i.imgur.com/zibgx0i.jpeg" alt="Camp With MHE snapshot">
+    <img src="https://i.imgur.com/JJ2eQH8.jpeg" alt="Camp With MHE snapshot">
     <img src="https://i.imgur.com/KP1Odtk.jpeg" alt="Camp With MHE snapshot">
     <img src="https://i.imgur.com/xKWKQZg.jpeg" alt="Camp With MHE snapshot">
     <img src="https://i.imgur.com/D3mNwSr.jpeg" alt="Camp With MHE snapshot">
@@ -1194,7 +1107,22 @@
         <p>Half the reason people come back for the next one.</p>
       </div>
     </div>
-
+    <div class="gallery-item">
+      <div class="photo"><img src="images/gallery/g05.jpg" alt="Camp With MHE moment 5"></div>
+      <div class="gallery-caption">
+        <span class="cap-num">05 — VIEWS</span>
+        <h4>Worth The Drive</h4>
+        <p>The kind of view that makes the early start worth it.</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="photo"><img src="images/gallery/g06.jpg" alt="Camp With MHE moment 6"></div>
+      <div class="gallery-caption">
+        <span class="cap-num">06 — DOWNTIME</span>
+        <h4>Slow Hours, Good Talk</h4>
+        <p>Nowhere to be, nothing to check, just the camp and the day.</p>
+      </div>
+    </div>
     <div class="gallery-item">
       <div class="photo"><img src="https://i.imgur.com/Or4ehBn.jpeg" alt="Camp With MHE moment 7"></div>
       <div class="gallery-caption">
@@ -1299,22 +1227,499 @@
         <p>Tents down, memories made — same time, next camp.</p>
       </div>
     </div>
-    <div class="gallery-item featured">
-      <div class="photo"><img src="https://i.imgur.com/a1jnuAW.jpeg" alt="Camp With MHE Season 3"></div>
-      <div class="gallery-caption">
-        <span class="cap-num">ESCAPE FROM MATURITY — SEASON 3</span>
-        <h4>You showed up. That made it.</h4>
-        <p>Every tent pitched, every laugh, every late night around the fire — this was all you. Thank you for being part of Season 3.</p>
-      </div>
+  </div>
+</section>
+
+
+<!-- ===== PAST SEASONS ===== -->
+<section class="past-seasons" id="seasons">
+  <style>
+    .past-seasons{background:var(--pine);color:var(--cream);padding:6.5rem 5%;}
+    .past-seasons .section-head h2{color:var(--cream);}
+    .past-seasons .section-head p{color:rgba(246,240,228,0.75);}
+    .ps-season{max-width:1280px;margin:0 auto;}
+    .ps-season + .ps-season{margin-top:5rem;}
+    .ps-season-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:0.6rem 1.2rem;border-bottom:1px solid rgba(246,240,228,0.18);padding-bottom:1rem;margin-bottom:2rem;}
+    .ps-season-head .ps-no{font-family:'Fraunces',serif;font-size:2.4rem;font-weight:700;color:var(--gold);line-height:1;}
+    .ps-season-head h3{font-family:'Fraunces',serif;font-size:1.6rem;color:var(--cream);}
+    .ps-season-head .ps-meta{font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ember);margin-left:auto;}
+    .ps-season > p.ps-intro{color:rgba(246,240,228,0.78);max-width:70ch;margin:-1rem 0 2rem;font-size:1rem;}
+    .ps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.4rem;}
+    .ps-card{margin:0;position:relative;overflow:hidden;border-radius:3px;cursor:pointer;background:#0d160f;aspect-ratio:4/3;box-shadow:0 8px 22px rgba(0,0,0,0.35);outline:none;}
+    .ps-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.5s ease;}
+    .ps-card:hover img,.ps-card:focus img{transform:scale(1.07);}
+    .ps-card figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem 0.9rem 0.7rem;font-size:0.82rem;color:var(--cream);background:linear-gradient(transparent,rgba(8,14,9,0.85));opacity:0;transform:translateY(8px);transition:all 0.35s ease;}
+    .ps-card:hover figcaption,.ps-card:focus figcaption{opacity:1;transform:translateY(0);}
+    .ps-lb{position:fixed;inset:0;z-index:1000;background:rgba(8,12,9,0.94);display:none;align-items:center;justify-content:center;flex-direction:column;padding:3vh 3vw;}
+    .ps-lb.open{display:flex;}
+    .ps-lb img{max-width:92vw;max-height:80vh;border-radius:3px;box-shadow:0 20px 60px rgba(0,0,0,0.6);}
+    .ps-lb .ps-lb-cap{color:var(--cream);font-family:'JetBrains Mono',monospace;font-size:0.85rem;letter-spacing:0.06em;margin-top:1.2rem;text-align:center;}
+    .ps-lb .ps-close{position:absolute;top:2.2rem;right:2.6rem;color:var(--cream);font-size:2rem;cursor:pointer;line-height:1;background:none;border:none;}
+    .ps-lb .ps-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(246,240,228,0.1);border:1px solid rgba(246,240,228,0.3);color:var(--cream);width:48px;height:48px;border-radius:50%;font-size:1.4rem;cursor:pointer;}
+    .ps-lb .ps-prev{left:2.5%;} .ps-lb .ps-next{right:2.5%;}
+    @media(max-width:768px){.ps-grid{grid-template-columns:repeat(2,1fr);gap:0.9rem;}.ps-season-head .ps-meta{margin-left:0;width:100%;}}
+  </style>
+  <div class="section-head">
+    <span class="eyebrow">The Escape Game · Past Editions</span>
+    <h2>Where It All Started</h2>
+    <p>Before the trail had a name, there were the seasons that built the crew. Every photo below is from a past edition.</p>
+  </div>
+  <div class="ps-season">
+    <div class="ps-season-head">
+      <span class="ps-no">01</span>
+      <h3>Escape from Maturity</h3>
+      <span class="ps-meta">14–15 Feb 2020 · Nile Discovery Beach, Njeru–Jinja</span>
     </div>
-    <div class="gallery-appreciation">
-      <div class="escape-banner-text">
-        <span class="eyebrow mono">A NOTE FROM CAMP WITH MHE</span>
-        <p>To everyone who came out for Escape From Maturity Season 3 — thank you. You traded a weekend of comfort for something better: new people, open skies, and memories that are still being talked about. We'll see you at the next one.</p>
-      </div>
+    <p class="ps-intro">The first edition. Tents on the riverbank, board games and Ludo all afternoon, and a bonfire that ran long into the night — the weekend that proved a group chat could become a tradition.</p>
+    <div class="ps-grid">
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-01.jpg" data-cap="By the fire">
+          <img src="images/season1/s1-01.jpg" alt="By the fire" loading="lazy">
+          <figcaption>By the fire</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-02.jpg" data-cap="Riverside hangs">
+          <img src="images/season1/s1-02.jpg" alt="Riverside hangs" loading="lazy">
+          <figcaption>Riverside hangs</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-03.jpg" data-cap="Camp life">
+          <img src="images/season1/s1-03.jpg" alt="Camp life" loading="lazy">
+          <figcaption>Camp life</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-04.jpg" data-cap="Tents up">
+          <img src="images/season1/s1-04.jpg" alt="Tents up" loading="lazy">
+          <figcaption>Tents up</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-05.jpg" data-cap="Good company">
+          <img src="images/season1/s1-05.jpg" alt="Good company" loading="lazy">
+          <figcaption>Good company</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-06.jpg" data-cap="Slow afternoons">
+          <img src="images/season1/s1-06.jpg" alt="Slow afternoons" loading="lazy">
+          <figcaption>Slow afternoons</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-07.jpg" data-cap="On the grounds">
+          <img src="images/season1/s1-07.jpg" alt="On the grounds" loading="lazy">
+          <figcaption>On the grounds</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-08.jpg" data-cap="Golden hour">
+          <img src="images/season1/s1-08.jpg" alt="Golden hour" loading="lazy">
+          <figcaption>Golden hour</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-09.jpg" data-cap="Around the table">
+          <img src="images/season1/s1-09.jpg" alt="Around the table" loading="lazy">
+          <figcaption>Around the table</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-10.jpg" data-cap="Night mode">
+          <img src="images/season1/s1-10.jpg" alt="Night mode" loading="lazy">
+          <figcaption>Night mode</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-11.jpg" data-cap="The crew">
+          <img src="images/season1/s1-11.jpg" alt="The crew" loading="lazy">
+          <figcaption>The crew</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-12.jpg" data-cap="Home for the weekend">
+          <img src="images/season1/s1-12.jpg" alt="Home for the weekend" loading="lazy">
+          <figcaption>Home for the weekend</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-13.jpg" data-cap="Pull up a log">
+          <img src="images/season1/s1-13.jpg" alt="Pull up a log" loading="lazy">
+          <figcaption>Pull up a log</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-14.jpg" data-cap="Lakeside">
+          <img src="images/season1/s1-14.jpg" alt="Lakeside" loading="lazy">
+          <figcaption>Lakeside</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-15.jpg" data-cap="Settling in">
+          <img src="images/season1/s1-15.jpg" alt="Settling in" loading="lazy">
+          <figcaption>Settling in</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-16.jpg" data-cap="Wheels down">
+          <img src="images/season1/s1-16.jpg" alt="Wheels down" loading="lazy">
+          <figcaption>Wheels down</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-17.jpg" data-cap="Out on the trail">
+          <img src="images/season1/s1-17.jpg" alt="Out on the trail" loading="lazy">
+          <figcaption>Out on the trail</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-18.jpg" data-cap="The circle">
+          <img src="images/season1/s1-18.jpg" alt="The circle" loading="lazy">
+          <figcaption>The circle</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-19.jpg" data-cap="By the fire">
+          <img src="images/season1/s1-19.jpg" alt="By the fire" loading="lazy">
+          <figcaption>By the fire</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-20.jpg" data-cap="Riverside hangs">
+          <img src="images/season1/s1-20.jpg" alt="Riverside hangs" loading="lazy">
+          <figcaption>Riverside hangs</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-21.jpg" data-cap="Camp life">
+          <img src="images/season1/s1-21.jpg" alt="Camp life" loading="lazy">
+          <figcaption>Camp life</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-22.jpg" data-cap="Tents up">
+          <img src="images/season1/s1-22.jpg" alt="Tents up" loading="lazy">
+          <figcaption>Tents up</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-23.jpg" data-cap="Good company">
+          <img src="images/season1/s1-23.jpg" alt="Good company" loading="lazy">
+          <figcaption>Good company</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-24.jpg" data-cap="Slow afternoons">
+          <img src="images/season1/s1-24.jpg" alt="Slow afternoons" loading="lazy">
+          <figcaption>Slow afternoons</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-25.jpg" data-cap="On the grounds">
+          <img src="images/season1/s1-25.jpg" alt="On the grounds" loading="lazy">
+          <figcaption>On the grounds</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-26.jpg" data-cap="Golden hour">
+          <img src="images/season1/s1-26.jpg" alt="Golden hour" loading="lazy">
+          <figcaption>Golden hour</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-27.jpg" data-cap="Around the table">
+          <img src="images/season1/s1-27.jpg" alt="Around the table" loading="lazy">
+          <figcaption>Around the table</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-28.jpg" data-cap="Night mode">
+          <img src="images/season1/s1-28.jpg" alt="Night mode" loading="lazy">
+          <figcaption>Night mode</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-29.jpg" data-cap="The crew">
+          <img src="images/season1/s1-29.jpg" alt="The crew" loading="lazy">
+          <figcaption>The crew</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-30.jpg" data-cap="Home for the weekend">
+          <img src="images/season1/s1-30.jpg" alt="Home for the weekend" loading="lazy">
+          <figcaption>Home for the weekend</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-31.jpg" data-cap="Pull up a log">
+          <img src="images/season1/s1-31.jpg" alt="Pull up a log" loading="lazy">
+          <figcaption>Pull up a log</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-32.jpg" data-cap="Lakeside">
+          <img src="images/season1/s1-32.jpg" alt="Lakeside" loading="lazy">
+          <figcaption>Lakeside</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-33.jpg" data-cap="Settling in">
+          <img src="images/season1/s1-33.jpg" alt="Settling in" loading="lazy">
+          <figcaption>Settling in</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-34.jpg" data-cap="Wheels down">
+          <img src="images/season1/s1-34.jpg" alt="Wheels down" loading="lazy">
+          <figcaption>Wheels down</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-35.jpg" data-cap="Out on the trail">
+          <img src="images/season1/s1-35.jpg" alt="Out on the trail" loading="lazy">
+          <figcaption>Out on the trail</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-36.jpg" data-cap="The circle">
+          <img src="images/season1/s1-36.jpg" alt="The circle" loading="lazy">
+          <figcaption>The circle</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-37.jpg" data-cap="By the fire">
+          <img src="images/season1/s1-37.jpg" alt="By the fire" loading="lazy">
+          <figcaption>By the fire</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-38.jpg" data-cap="Riverside hangs">
+          <img src="images/season1/s1-38.jpg" alt="Riverside hangs" loading="lazy">
+          <figcaption>Riverside hangs</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-39.jpg" data-cap="Camp life">
+          <img src="images/season1/s1-39.jpg" alt="Camp life" loading="lazy">
+          <figcaption>Camp life</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-40.jpg" data-cap="Tents up">
+          <img src="images/season1/s1-40.jpg" alt="Tents up" loading="lazy">
+          <figcaption>Tents up</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-41.jpg" data-cap="Good company">
+          <img src="images/season1/s1-41.jpg" alt="Good company" loading="lazy">
+          <figcaption>Good company</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-42.jpg" data-cap="Slow afternoons">
+          <img src="images/season1/s1-42.jpg" alt="Slow afternoons" loading="lazy">
+          <figcaption>Slow afternoons</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-43.jpg" data-cap="On the grounds">
+          <img src="images/season1/s1-43.jpg" alt="On the grounds" loading="lazy">
+          <figcaption>On the grounds</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-44.jpg" data-cap="Golden hour">
+          <img src="images/season1/s1-44.jpg" alt="Golden hour" loading="lazy">
+          <figcaption>Golden hour</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-45.jpg" data-cap="Around the table">
+          <img src="images/season1/s1-45.jpg" alt="Around the table" loading="lazy">
+          <figcaption>Around the table</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-46.jpg" data-cap="Night mode">
+          <img src="images/season1/s1-46.jpg" alt="Night mode" loading="lazy">
+          <figcaption>Night mode</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-47.jpg" data-cap="The crew">
+          <img src="images/season1/s1-47.jpg" alt="The crew" loading="lazy">
+          <figcaption>The crew</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season1/s1-48.jpg" data-cap="Home for the weekend">
+          <img src="images/season1/s1-48.jpg" alt="Home for the weekend" loading="lazy">
+          <figcaption>Home for the weekend</figcaption>
+        </figure>
+    </div>
+  </div>
+  <div class="ps-season">
+    <div class="ps-season-head">
+      <span class="ps-no">02</span>
+      <h3>Escape Game, 2nd Edition <span style="font-weight:300;color:var(--gold);">— Escape from Lockdown</span></h3>
+      <span class="ps-meta">2021 · Jinja, on the Nile</span>
+    </div>
+    <p class="ps-intro">A bigger crowd, a bigger camp. Hand-painted "I escaped lockdown" boards, PlayStation under the trees, swims in the river and sunsets over the dam — the season everyone needed after a long year indoors.</p>
+    <div class="ps-grid">
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-01.jpg" data-cap="Escaped lockdown">
+          <img src="images/season2/s2-01.jpg" alt="Escaped lockdown" loading="lazy">
+          <figcaption>Escaped lockdown</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-02.jpg" data-cap="Tent village">
+          <img src="images/season2/s2-02.jpg" alt="Tent village" loading="lazy">
+          <figcaption>Tent village</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-03.jpg" data-cap="On the trail">
+          <img src="images/season2/s2-03.jpg" alt="On the trail" loading="lazy">
+          <figcaption>On the trail</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-04.jpg" data-cap="Bonfire nights">
+          <img src="images/season2/s2-04.jpg" alt="Bonfire nights" loading="lazy">
+          <figcaption>Bonfire nights</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-05.jpg" data-cap="Camp kitchen">
+          <img src="images/season2/s2-05.jpg" alt="Camp kitchen" loading="lazy">
+          <figcaption>Camp kitchen</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-06.jpg" data-cap="Game time">
+          <img src="images/season2/s2-06.jpg" alt="Game time" loading="lazy">
+          <figcaption>Game time</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-07.jpg" data-cap="Live. Love. Camp.">
+          <img src="images/season2/s2-07.jpg" alt="Live. Love. Camp." loading="lazy">
+          <figcaption>Live. Love. Camp.</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-08.jpg" data-cap="Wheels to the water">
+          <img src="images/season2/s2-08.jpg" alt="Wheels to the water" loading="lazy">
+          <figcaption>Wheels to the water</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-09.jpg" data-cap="Sunset on the Nile">
+          <img src="images/season2/s2-09.jpg" alt="Sunset on the Nile" loading="lazy">
+          <figcaption>Sunset on the Nile</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-10.jpg" data-cap="Straight off the bank">
+          <img src="images/season2/s2-10.jpg" alt="Straight off the bank" loading="lazy">
+          <figcaption>Straight off the bank</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-11.jpg" data-cap="Board games">
+          <img src="images/season2/s2-11.jpg" alt="Board games" loading="lazy">
+          <figcaption>Board games</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-12.jpg" data-cap="Good company">
+          <img src="images/season2/s2-12.jpg" alt="Good company" loading="lazy">
+          <figcaption>Good company</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-13.jpg" data-cap="Made it out">
+          <img src="images/season2/s2-13.jpg" alt="Made it out" loading="lazy">
+          <figcaption>Made it out</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-14.jpg" data-cap="Colours of the trip">
+          <img src="images/season2/s2-14.jpg" alt="Colours of the trip" loading="lazy">
+          <figcaption>Colours of the trip</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-15.jpg" data-cap="The crew">
+          <img src="images/season2/s2-15.jpg" alt="The crew" loading="lazy">
+          <figcaption>The crew</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-16.jpg" data-cap="Steps & stories">
+          <img src="images/season2/s2-16.jpg" alt="Steps & stories" loading="lazy">
+          <figcaption>Steps & stories</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-17.jpg" data-cap="Hand-washing, camp style">
+          <img src="images/season2/s2-17.jpg" alt="Hand-washing, camp style" loading="lazy">
+          <figcaption>Hand-washing, camp style</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-18.jpg" data-cap="Golden hour">
+          <img src="images/season2/s2-18.jpg" alt="Golden hour" loading="lazy">
+          <figcaption>Golden hour</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-19.jpg" data-cap="Escaped lockdown">
+          <img src="images/season2/s2-19.jpg" alt="Escaped lockdown" loading="lazy">
+          <figcaption>Escaped lockdown</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-20.jpg" data-cap="Tent village">
+          <img src="images/season2/s2-20.jpg" alt="Tent village" loading="lazy">
+          <figcaption>Tent village</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-21.jpg" data-cap="On the trail">
+          <img src="images/season2/s2-21.jpg" alt="On the trail" loading="lazy">
+          <figcaption>On the trail</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-22.jpg" data-cap="Bonfire nights">
+          <img src="images/season2/s2-22.jpg" alt="Bonfire nights" loading="lazy">
+          <figcaption>Bonfire nights</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-23.jpg" data-cap="Camp kitchen">
+          <img src="images/season2/s2-23.jpg" alt="Camp kitchen" loading="lazy">
+          <figcaption>Camp kitchen</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-24.jpg" data-cap="Game time">
+          <img src="images/season2/s2-24.jpg" alt="Game time" loading="lazy">
+          <figcaption>Game time</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-25.jpg" data-cap="Live. Love. Camp.">
+          <img src="images/season2/s2-25.jpg" alt="Live. Love. Camp." loading="lazy">
+          <figcaption>Live. Love. Camp.</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-26.jpg" data-cap="Wheels to the water">
+          <img src="images/season2/s2-26.jpg" alt="Wheels to the water" loading="lazy">
+          <figcaption>Wheels to the water</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-27.jpg" data-cap="Sunset on the Nile">
+          <img src="images/season2/s2-27.jpg" alt="Sunset on the Nile" loading="lazy">
+          <figcaption>Sunset on the Nile</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-28.jpg" data-cap="Straight off the bank">
+          <img src="images/season2/s2-28.jpg" alt="Straight off the bank" loading="lazy">
+          <figcaption>Straight off the bank</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-29.jpg" data-cap="Board games">
+          <img src="images/season2/s2-29.jpg" alt="Board games" loading="lazy">
+          <figcaption>Board games</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-30.jpg" data-cap="Good company">
+          <img src="images/season2/s2-30.jpg" alt="Good company" loading="lazy">
+          <figcaption>Good company</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-31.jpg" data-cap="Made it out">
+          <img src="images/season2/s2-31.jpg" alt="Made it out" loading="lazy">
+          <figcaption>Made it out</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-32.jpg" data-cap="Colours of the trip">
+          <img src="images/season2/s2-32.jpg" alt="Colours of the trip" loading="lazy">
+          <figcaption>Colours of the trip</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-33.jpg" data-cap="The crew">
+          <img src="images/season2/s2-33.jpg" alt="The crew" loading="lazy">
+          <figcaption>The crew</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-34.jpg" data-cap="Steps & stories">
+          <img src="images/season2/s2-34.jpg" alt="Steps & stories" loading="lazy">
+          <figcaption>Steps & stories</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-35.jpg" data-cap="Hand-washing, camp style">
+          <img src="images/season2/s2-35.jpg" alt="Hand-washing, camp style" loading="lazy">
+          <figcaption>Hand-washing, camp style</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-36.jpg" data-cap="Golden hour">
+          <img src="images/season2/s2-36.jpg" alt="Golden hour" loading="lazy">
+          <figcaption>Golden hour</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-37.jpg" data-cap="Escaped lockdown">
+          <img src="images/season2/s2-37.jpg" alt="Escaped lockdown" loading="lazy">
+          <figcaption>Escaped lockdown</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-38.jpg" data-cap="Tent village">
+          <img src="images/season2/s2-38.jpg" alt="Tent village" loading="lazy">
+          <figcaption>Tent village</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-39.jpg" data-cap="On the trail">
+          <img src="images/season2/s2-39.jpg" alt="On the trail" loading="lazy">
+          <figcaption>On the trail</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-40.jpg" data-cap="Bonfire nights">
+          <img src="images/season2/s2-40.jpg" alt="Bonfire nights" loading="lazy">
+          <figcaption>Bonfire nights</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-41.jpg" data-cap="Camp kitchen">
+          <img src="images/season2/s2-41.jpg" alt="Camp kitchen" loading="lazy">
+          <figcaption>Camp kitchen</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-42.jpg" data-cap="Game time">
+          <img src="images/season2/s2-42.jpg" alt="Game time" loading="lazy">
+          <figcaption>Game time</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-43.jpg" data-cap="Live. Love. Camp.">
+          <img src="images/season2/s2-43.jpg" alt="Live. Love. Camp." loading="lazy">
+          <figcaption>Live. Love. Camp.</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-44.jpg" data-cap="Wheels to the water">
+          <img src="images/season2/s2-44.jpg" alt="Wheels to the water" loading="lazy">
+          <figcaption>Wheels to the water</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-45.jpg" data-cap="Sunset on the Nile">
+          <img src="images/season2/s2-45.jpg" alt="Sunset on the Nile" loading="lazy">
+          <figcaption>Sunset on the Nile</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-46.jpg" data-cap="Straight off the bank">
+          <img src="images/season2/s2-46.jpg" alt="Straight off the bank" loading="lazy">
+          <figcaption>Straight off the bank</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-47.jpg" data-cap="Board games">
+          <img src="images/season2/s2-47.jpg" alt="Board games" loading="lazy">
+          <figcaption>Board games</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-48.jpg" data-cap="Good company">
+          <img src="images/season2/s2-48.jpg" alt="Good company" loading="lazy">
+          <figcaption>Good company</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-49.jpg" data-cap="Made it out">
+          <img src="images/season2/s2-49.jpg" alt="Made it out" loading="lazy">
+          <figcaption>Made it out</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-50.jpg" data-cap="Colours of the trip">
+          <img src="images/season2/s2-50.jpg" alt="Colours of the trip" loading="lazy">
+          <figcaption>Colours of the trip</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-51.jpg" data-cap="The crew">
+          <img src="images/season2/s2-51.jpg" alt="The crew" loading="lazy">
+          <figcaption>The crew</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-52.jpg" data-cap="Steps & stories">
+          <img src="images/season2/s2-52.jpg" alt="Steps & stories" loading="lazy">
+          <figcaption>Steps & stories</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-53.jpg" data-cap="Hand-washing, camp style">
+          <img src="images/season2/s2-53.jpg" alt="Hand-washing, camp style" loading="lazy">
+          <figcaption>Hand-washing, camp style</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-54.jpg" data-cap="Golden hour">
+          <img src="images/season2/s2-54.jpg" alt="Golden hour" loading="lazy">
+          <figcaption>Golden hour</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-55.jpg" data-cap="Escaped lockdown">
+          <img src="images/season2/s2-55.jpg" alt="Escaped lockdown" loading="lazy">
+          <figcaption>Escaped lockdown</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-56.jpg" data-cap="Tent village">
+          <img src="images/season2/s2-56.jpg" alt="Tent village" loading="lazy">
+          <figcaption>Tent village</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-57.jpg" data-cap="On the trail">
+          <img src="images/season2/s2-57.jpg" alt="On the trail" loading="lazy">
+          <figcaption>On the trail</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-58.jpg" data-cap="Bonfire nights">
+          <img src="images/season2/s2-58.jpg" alt="Bonfire nights" loading="lazy">
+          <figcaption>Bonfire nights</figcaption>
+        </figure>
+        <figure class="ps-card" tabindex="0" data-full="images/season2/s2-59.jpg" data-cap="Camp kitchen">
+          <img src="images/season2/s2-59.jpg" alt="Camp kitchen" loading="lazy">
+          <figcaption>Camp kitchen</figcaption>
+        </figure>
     </div>
   </div>
 </section>
+<div class="ps-lb" id="psLightbox" aria-hidden="true">
+  <button class="ps-close" aria-label="Close">&times;</button>
+  <button class="ps-nav ps-prev" aria-label="Previous">&#8249;</button>
+  <img src="" alt="">
+  <button class="ps-nav ps-next" aria-label="Next">&#8250;</button>
+  <div class="ps-lb-cap"></div>
+</div>
 
 <section class="testimonials" id="testimonials">
   <div class="section-head">
@@ -1324,7 +1729,7 @@
   <div class="testi-grid">
     <div class="testi-card">
       <span class="quote-mark">"</span>
-      <p>Showed up not knowing anyone and left with a group chat full of new friends. The Escape From Lockdown camp was unreal.</p>
+      <p>Showed up not knowing anyone and left with a group chat full of new friends. The Lake Bunyonyi camp was unreal.</p>
       <div class="testi-name mono">— Brenda, Kampala</div>
     </div>
     <div class="testi-card">
@@ -1334,10 +1739,14 @@
     </div>
     <div class="testi-card">
       <span class="quote-mark">"</span>
-      <p>The full moon night at Nile Discovery Beach is now a tradition for our friend group. Already counting down to the next one.</p>
+      <p>The full moon beach camp is now a tradition for our friend group. Already counting down to the next one.</p>
       <div class="testi-name mono">— Pauline, Mukono</div>
     </div>
   </div>
+</section>
+
+<section class="thankyou-end" style="background:var(--pine-deep);padding:0;line-height:0;">
+  <img src="images/thankyou.jpg" alt="Thank you for escaping with Camp With MHE — Escape From Maturity Season 3" style="display:block;width:100%;max-width:1100px;margin:0 auto;height:auto;">
 </section>
 
 <section class="contact" id="contact">
@@ -1357,18 +1766,9 @@
       <span>Jinja, Uganda</span>
     </div>
     <div class="contact-buttons">
-      <a href="https://wa.me/256700313855" target="_blank" rel="noopener" class="contact-btn whatsapp">
-        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        WhatsApp
-      </a>
-      <a href="mailto:campwithmhe@gmail.com" class="contact-btn email">
-        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        Email Us
-      </a>
-      <a href="https://www.instagram.com/campwithmhe/" target="_blank" rel="noopener" class="contact-btn instagram">
-        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        Instagram
-      </a>
+      <a href="https://wa.me/256700313855" target="_blank" rel="noopener" class="contact-btn whatsapp"><span class="icon">💬</span> WhatsApp</a>
+      <a href="mailto:campwithmhe@gmail.com" class="contact-btn email"><span class="icon">✉️</span> Email Us</a>
+      <a href="https://www.instagram.com/campwithmhe/" target="_blank" rel="noopener" class="contact-btn instagram"><span class="icon">📷</span> Instagram</a>
     </div>
   </div>
 </section>
@@ -1382,6 +1782,12 @@
     <a href="mailto:campwithmhe@gmail.com">Email</a>
     <a href="#camps">Upcoming Camps</a>
   </div>
+  <div class="footer-credits" style="display:flex;align-items:center;justify-content:center;gap:2rem;margin:1.8rem 0 0.6rem;flex-wrap:wrap;">
+    <img src="images/logos/escapegame.png" alt="Escape Game" style="height:44px;width:auto;opacity:0.85;">
+    <span style="width:1px;height:34px;background:rgba(246,240,228,0.18);"></span>
+    <img src="images/logos/photomhe.png" alt="PHOTOMHE" style="height:40px;width:auto;opacity:0.85;">
+  </div>
+  <p style="font-size:0.76rem;letter-spacing:0.04em;opacity:0.85;">An <strong style="color:var(--gold);font-weight:600;">Escape Game</strong> production &nbsp;·&nbsp; Artwork &amp; photography by <strong style="color:var(--cream);font-weight:600;">PHOTOMHE</strong></p>
   <p>&copy; 2026 Camp With MHE. All rights reserved.</p>
 </footer>
 
@@ -1396,5 +1802,23 @@
   });
 </script>
 
+
+<script>
+(function(){
+  var cards=[].slice.call(document.querySelectorAll('.ps-card'));
+  var lb=document.getElementById('psLightbox');
+  if(!lb||!cards.length)return;
+  var img=lb.querySelector('img'),cap=lb.querySelector('.ps-lb-cap'),cur=0;
+  function show(i){cur=(i+cards.length)%cards.length;var c=cards[cur];img.src=c.getAttribute('data-full');img.alt=c.getAttribute('data-cap');cap.textContent=c.getAttribute('data-cap');}
+  function open(i){show(i);lb.classList.add('open');lb.setAttribute('aria-hidden','false');}
+  function close(){lb.classList.remove('open');lb.setAttribute('aria-hidden','true');img.src='';}
+  cards.forEach(function(c,i){c.addEventListener('click',function(){open(i);});c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(i);}});});
+  lb.querySelector('.ps-close').addEventListener('click',close);
+  lb.querySelector('.ps-prev').addEventListener('click',function(e){e.stopPropagation();show(cur-1);});
+  lb.querySelector('.ps-next').addEventListener('click',function(e){e.stopPropagation();show(cur+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowLeft')show(cur-1);else if(e.key==='ArrowRight')show(cur+1);});
+})();
+</script>
 </body>
 </html>
